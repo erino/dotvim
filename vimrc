@@ -20,6 +20,8 @@ set autoread                " read file if it's changed outside of vim
 set history=1000            " remember more than 20 commands/search patterns
 set noswapfile
 
+let mapleader = ","         " set <LEADER> to ,
+
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -34,13 +36,13 @@ if &t_Co > 2 || has("gui_running")
   syntax on
 endif
 
+
 " Removes trailing spaces
 function TrimWhiteSpace()
   %s/\s*$//
   ''
 :endfunction
-
-let mapleader = ","        " set <LEADER> to ,
+nmap <LEADER>w :call TrimWhiteSpace()<CR>
 
 " Quickly open the vim config file in a new tab.
 nmap <leader>v :tabedit $MYVIMRC<CR>
