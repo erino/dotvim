@@ -40,3 +40,14 @@ function TrimWhiteSpace()
   ''
 :endfunction
 
+let mapleader = ","        " set <LEADER> to ,
+
+" Quickly open the vim config file in a new tab.
+nmap <leader>v :tabedit $MYVIMRC<CR>
+
+" Show whitespace
+set listchars=tab:>-,trail:·,eol:$
+nmap <silent> <leader>s :set nolist!<CR>
+
+nmap <LEADER>d :NERDTreeToggle<CR>
+
