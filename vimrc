@@ -11,7 +11,6 @@ set shiftwidth=2            " the number of spaces used by << and >>
 set expandtab               " insert spaces instead of tabs
 set textwidth=72            " right margin to use when wrapping text
 
-set autoindent
 set nowrap                  " disable line wrapping
 set incsearch               " show search matches as you type
 
