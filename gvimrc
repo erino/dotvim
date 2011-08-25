@@ -20,3 +20,4 @@ nmap <leader>2 :set lines=80 columns=171<CR><C-w>v
 syntax enable
 set background=dark
 colorscheme solarized       " Solarized colour scheme
+
