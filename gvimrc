@@ -14,8 +14,17 @@ set lines=80 columns=85     " window dimensions
 set colorcolumn=81          " Show coloured bar at more then 80 chars
 
 " See http://effectif.com/vim/changing-window-size
-nmap <leader>1 :set lines=80 columns=85<CR><C-w>o
-nmap <leader>2 :set lines=80 columns=171<CR><C-w>v
+nmap <leader>1 :set lines=90 columns=85<CR><C-w>o
+nmap <leader>2 :set lines=90 columns=185<CR><C-w>v
+nmap <leader>3 :set lines=90 columns=200<CR><C-w>v
+
+" Colorized Ruby, Rake, RSpec, and Cucumber output in vim using ConqueTerm
+nmap <silent> <Leader>rf   :call RunRspecCurrentFileConque()<CR>
+nmap <silent> <Leader>rl   :call RunRspecCurrentLineConque()<CR>
+nmap <silent> <Leader>rcRR :call RunRakeConque()<CR>
+nmap <silent> <Leader>rcrl :call RunLastConqueCommand()<CR>
+
+let g:ruby_conque_rspec_command='bundle exec rspec'
 
 syntax enable
 set background=dark

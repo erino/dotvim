@@ -51,3 +51,4 @@ nmap <silent> <leader>s :set nolist!<CR>
 
 nmap <LEADER>d :NERDTreeToggle<CR>
 
+set tags+=gems.tags  "ctags for Gems
